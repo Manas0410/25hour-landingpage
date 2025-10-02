@@ -36,7 +36,7 @@ const LandingPage = () => {
   return (
     <div className="min-h-screen flex items-center flex-col justify-center p-6 overflow-y-auto">
       <div className="flex items-center mb-2 g-4">
-        <img src={logo} alt="app" className="w-4 md:w-8 lg:w-12" />
+        <img src={logo} alt="app" className="w-8 lg:w-12" />
         <h1 className="text-4xl md:text-5xl font-bold leading-tight">
           25 Hours <sup className="text-blue-300 text-sm">AI-powered</sup>
         </h1>
