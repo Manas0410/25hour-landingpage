@@ -70,12 +70,14 @@ const LandingPage = () => {
       <div className="flex items-center mb-2 g-4 flex-col">
         <img src={logo} alt="app" className="w-16 lg:w-12" />
         <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-          25 Hours <sup className="text-blue-300 text-sm">AI-powered</sup>
+          25Hours <sup className="text-blue-300 text-sm">AI-powered</sup>
         </h1>
       </div>
       <p className="text-lg text-gray-700 mb-5 max-w-xl text-center font-semibold">
-        Make everyday feel like it has 25 hours. Track tasks, build habits, and
-        stay motivated - all with the help of AI
+        Unlock 25 hours in your day with AI-powered task <span className="text-blue-300">Planning, Tracking and Execution</span>.
+        Organize tough tasks effortlessly, get AI-generated reminders, and let
+        Agentic mode handle tasks for you—all for smarter, stress-free
+        productivity.
       </p>
       {/* Email input and button */}
       <form className="flex max-w-md" onSubmit={handleSubmit}>
@@ -85,12 +87,18 @@ const LandingPage = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="flex-grow w-[210px] h-8 rounded-l-lg border border-gray-400 px-5 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="flex-grow w-[210px] h-8 rounded-l-lg border border-gray-400 px-5 py-3 focus:outline-none focus:ring-1 focus:ring-blue-400"
         />
         <button
           type="submit"
-          className="bg-blue-500 w-[125px]  h-8 text-white rounded-r-lg px-4 font-semibold hover:bg-blue-400 transition-colors cursor-pointer"
-          disabled={submitted}
+          className={`${
+            submitted
+              ? "cursor-progress bg-blue-500"
+              : email
+              ? "bg-blue-500 cursor-pointer"
+              : "bg-blue-300 cursor-not-allowed"
+          } w-[125px]  h-8 text-white rounded-r-lg px-4 font-semibold transition-colors `}
+          disabled={submitted || !email}
         >
           {submitted ? "Submitting..." : "Join Now"}
         </button>
