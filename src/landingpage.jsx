@@ -52,7 +52,7 @@ const LandingPage = () => {
           bcc: "manasshrivastava0410@gmail.com,sanskratiagrawal306@gmail.com",
           subject: "THANK YOU FOR CONNECTING WITH 25 hours Team",
           message:
-            "\nThank you for connecting with the 25 Hours Team.\n\nWe're excited to have you in our community. Once we are live, you'll be the first to know.\n\nBest regards,\n25 Hours Team",
+            "\nHello,\n\nThank you for connecting with the 25 Hours Team.\n\nWe're excited to have you in our community. Once we are live, you'll be the first to know.\n\nBest regards,\n25 Hours Team",
         }),
       });
 
@@ -89,7 +89,7 @@ const LandingPage = () => {
         />
         <button
           type="submit"
-          className="bg-blue-300 w-[125px]  h-8 text-white rounded-r-lg px-4 font-semibold hover:bg-blue-200 transition-colors cursor-pointer"
+          className="bg-blue-500 w-[125px]  h-8 text-white rounded-r-lg px-4 font-semibold hover:bg-blue-400 transition-colors cursor-pointer"
           disabled={submitted}
         >
           {submitted ? "Submitting..." : "Join Now"}
