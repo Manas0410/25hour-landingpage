@@ -53,7 +53,6 @@ const LandingPage = () => {
           subject: "THANK YOU FOR CONNECTING WITH 25 hours Team",
           message:
             "\nThank you for connecting with the 25 Hours Team.\n\nWe're excited to have you in our community. Once we are live, you'll be the first to know.\n\nBest regards,\n25 Hours Team",
-          information: "",
         }),
       });
 
