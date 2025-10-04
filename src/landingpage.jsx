@@ -90,7 +90,7 @@ const LandingPage = () => {
         />
         <button
           type="submit"
-          className="bg-blue-300  h-8 text-white rounded-r-lg px-4 font-semibold hover:bg-blue-200 transition-colors cursor-pointer"
+          className="bg-blue-300 w-max  h-8 text-white rounded-r-lg px-4 font-semibold hover:bg-blue-200 transition-colors cursor-pointer"
           disabled={submitted}
         >
           {submitted ? "Submitting..." : "Join Now"}
