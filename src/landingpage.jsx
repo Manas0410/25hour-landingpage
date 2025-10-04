@@ -85,11 +85,11 @@ const LandingPage = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="flex-grow h-8 rounded-l-lg border border-gray-400 px-5 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="flex-grow w-[210px] h-8 rounded-l-lg border border-gray-400 px-5 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
         />
         <button
           type="submit"
-          className="bg-blue-300 w-max  h-8 text-white rounded-r-lg px-4 font-semibold hover:bg-blue-200 transition-colors cursor-pointer"
+          className="bg-blue-300 w-[125px]  h-8 text-white rounded-r-lg px-4 font-semibold hover:bg-blue-200 transition-colors cursor-pointer"
           disabled={submitted}
         >
           {submitted ? "Submitting..." : "Join Now"}
